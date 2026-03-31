@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS orders;
+
+CREATE TABLE orders (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    order_date DATE NOT NULL,
+    amount DOUBLE NOT NULL,
+    customer_id BIGINT NOT NULL
+);
